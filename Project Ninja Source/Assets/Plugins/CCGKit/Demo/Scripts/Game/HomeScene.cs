@@ -10,7 +10,7 @@ using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 
 using DG.Tweening;
-using FullSerializer;
+using Databox.FullSerializer;
 using TMPro;
 
 #if ENABLE_MASTER_SERVER_KIT

@@ -14,7 +14,7 @@ using UnityEngine.UI;
 using CCGKit;
 
 using DG.Tweening;
-using FullSerializer;
+using Databox.FullSerializer;
 using TMPro;
 
 #pragma warning disable 618

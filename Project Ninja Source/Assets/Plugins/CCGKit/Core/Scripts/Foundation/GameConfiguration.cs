@@ -15,7 +15,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-using FullSerializer;
+using Databox.FullSerializer;
 
 namespace CCGKit
 {

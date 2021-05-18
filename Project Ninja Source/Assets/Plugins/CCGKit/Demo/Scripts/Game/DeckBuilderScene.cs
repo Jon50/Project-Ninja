@@ -10,7 +10,7 @@ using UnityEngine.Assertions;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
-using FullSerializer;
+using Databox.FullSerializer;
 using TMPro;
 
 using CCGKit;
@@ -86,7 +86,7 @@ public class DeckBuilderScene : BaseScene
 
         LoadCards(0);
         numPages = Mathf.CeilToInt(GameManager.Instance.config.GetNumCards() / (float)cardPositions.Count);
-        pageText.text = "Page " + (currentPage + 1) + "/" + numPages;
+        pageText.text = "Page " + ( currentPage + 1 ) + "/" + numPages;
 
         foreach (var deck in GameManager.Instance.playerDecks)
         {
@@ -178,7 +178,7 @@ public class DeckBuilderScene : BaseScene
         {
             currentPage = 0;
         }
-        pageText.text = "Page " + (currentPage + 1) + "/" + numPages;
+        pageText.text = "Page " + ( currentPage + 1 ) + "/" + numPages;
         LoadCards(currentPage);
     }
 
@@ -189,7 +189,7 @@ public class DeckBuilderScene : BaseScene
         {
             currentPage = numPages - 1;
         }
-        pageText.text = "Page " + (currentPage + 1) + "/" + numPages;
+        pageText.text = "Page " + ( currentPage + 1 ) + "/" + numPages;
         LoadCards(currentPage);
     }
 
