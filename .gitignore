@@ -5,6 +5,7 @@
 [Bb]uilds/
 [Aa]ssets/AssetStoreTools*
 x64/
+NatureManufacture/
 
 # Visual Studio cache directory
 .vs/
