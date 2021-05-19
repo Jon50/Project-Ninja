@@ -517,7 +517,85 @@ MonoBehaviour:
   - Assets/Plugins/EasyMobile/Demo/Models/nitro.fbx
   - Assets/Plugins/EasyMobile/Demo/Models/tree.fbx
   - Assets/Plugins/EasyMobile/Demo/Models/house.fbx
-  uvOverlapAssetList: 0000000000000000010100000101000000000000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000000000001010000000000000000000001010000010100000000000001010000010100000000000001010000000000000101000000000000010100000000000001010000000000000000000000000000010100000101000000000000010100000101000000000000010100000101000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000010100000101000000000000010100000000000001010000010100000101000000000000
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRock.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Bomb-Plant.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/WoodenFence.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Palm.fbx
+  - Assets/Krearthur/GOPainter/Resources/brushRadius.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerB.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Tree.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/BeachUmbrella.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyRockCliff.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/LowPolyCloud.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Crate.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Fungi.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/FlowerA.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Stone.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/BeachLounger.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/Grass.fbx
+  - Assets/Krearthur/GOPainter/ExampleAssets/Models/BeachHouse.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Fence.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/veg_clovers_purple_02_scaled.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/L_plant_03_scaled.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Small_Tree_01.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/L_plant_02_scaled.FBX
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_03_LOD.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/veg_clovers_purple_02_noflower_scaled.fbx
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/SimpleQuad250.fbx
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/Trees/TreePineLP_001.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Building.FBX
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/GrassMower.fbx
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_01_LOD.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/L_plant_01_scaled.FBX
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/Trees/TreePineLP_003.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Small_Tree_02.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/RoseyFlower.fbx
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/SphereHighRes.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/S_plant_02_scaled.FBX
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_03.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Fern_01.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Boulder_01.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Fern_02.FBX
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/PlanetaryRing.fbx
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_02_LOD.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/M_plant_04_scaled.FBX
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_02.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Fern_01_LOD.FBX
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/Trees/TreePineLP_002.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/Fern_02_LOD.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/veg_plant_01_scaled.fbx
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/Spaceship.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/LowPlant_01_Xform_scaled.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Fence_LOD.fbx
+  - Assets/GPUInstancer/Demos/PrefabInstancing/Meshes/Asteroid_01.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/veg_clovers_white_02_scaled.fbx
+  - Assets/GPUInstancer/Demos/_SharedResources/Meshes/Spaceship_collider.FBX
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Vegetation/veg_dandelion_01_scaled.fbx
+  - Assets/GPUInstancer/Demos/DetailInstancing/Meshes/Mountain.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/TreeIt/TreeIt.fbx
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Grass/TVE_Meadow_Grass_01_Var6.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Roots/TVE_Roots_System_02.fbx
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Clover/TVE_Clover_01_Var4.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Legacy/Models/Fern/Sword Fern.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Rocks/TVE_Rock_granite_M_rgAsy.fbx
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Pine_Big/TVE_Pine.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Rocks/TVE_Rock_Granite_reFto.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Sticks/sticks_debris_00.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Core/Resources/ArrowMesh.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Roots/TVE_Roots_System_01.fbx
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Legacy/Models/Grass/Grass_Medium.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Ferns/TVE_Fern_var03_Prefab.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Legacy/Models/Grass/Grass_Big.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Pine_Small/TVE_Pine_006_03.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Grass Generic/Grass Quad.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Grass/TVE_Meadow_Grass_01_Var3.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Grass Generic/Grass Cross.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Pine_Small/TVE_Pine_006_02.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Bush/TVE_RedBush_Var1.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Pine_Small/TVE_Pine_006_01.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Core/Resources/QuadMesh.FBX
+  - Assets/BOXOPHOBIC/The Vegetation Engine/Demo/Models/Clover/TVE_Clover_01_Var3.FBX
+  uvOverlapAssetList: 0000000000000000010100000101000000000000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000000000001010000000000000000000001010000010100000000000001010000010100000000000001010000000000000101000000000000010100000000000001010000000000000000000000000000010100000101000000000000010100000101000000000000010100000101000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000010100000101000000000000010100000000000001010000010100000101000000000000010100000101000000000000010100000000000001010000010100000101000001010000010100000101000000000000010100000000000000000000010100000101000001010000010100000000000001010000000000000101000001010000000000000101000001010000010100000101000000000000010100000101000001010000000000000000000000000000010100000000000001010000000000000101000000000000000000000101000001010000010100000101000000000000000000000101000001010000010100000000000001010000000000000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000000000001010000
   xatlasWarningShown: 0
   foundCompatibleSetup: 0
   gpuName: 
