@@ -4,7 +4,11 @@
 [Bb]uild/
 [Bb]uilds/
 [Aa]ssets/AssetStoreTools*
+
+# Assets/Editor
 x64/
+
+# Assets/Plugins/Procedural Worlds/Gaia/Asset Samples/
 NatureManufacture/
 
 # Visual Studio cache directory
