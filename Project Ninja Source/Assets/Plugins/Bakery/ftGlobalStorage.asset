@@ -493,7 +493,31 @@ MonoBehaviour:
   - Assets/Amazing Assets/Curved World/Example Scenes/Files/Models/intDoor_knob01.fbx
   - Assets/Amazing Assets/Curved World/Example Scenes/Files/Models/tree_mesh.FBX
   - Assets/Amazing Assets/Curved World/Example Scenes/Files/Models/Train.fbx
-  uvOverlapAssetList: 0000000000000000010100000101000000000000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000000000001010000000000000000000001010000010100000000000001010000010100000000000001010000000000000101000000000000010100000000000001010000000000000000000000000000010100000101000000000000010100000101000000000000010100000101000000000000
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidRunTurn.fbx
+  - Assets/Easy Character Movement/Examples/Models/Rocks03.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidMidAir.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidJumpAndFall.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidWalk.fbx
+  - Assets/Easy Character Movement/Examples/Models/Ethan.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidRunTurnSharp.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidCrouch.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidWalkTurnSharp.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidWalkTurn.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidRun.fbx
+  - Assets/Easy Character Movement/Examples/Models/Rocks01.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidIdleJumpUp.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidStandTurn.fbx
+  - Assets/Easy Character Movement/Examples/Animation/HumanoidIdle.fbx
+  - Assets/EasyMobile/Demo/Models/sheep.fbx
+  - Assets/EasyMobile/Demo/Models/nitro.fbx
+  - Assets/EasyMobile/Demo/Models/car.fbx
+  - Assets/EasyMobile/Demo/Models/tree.fbx
+  - Assets/EasyMobile/Demo/Models/house.fbx
+  - Assets/Plugins/EasyMobile/Demo/Models/sheep.fbx
+  - Assets/Plugins/EasyMobile/Demo/Models/nitro.fbx
+  - Assets/Plugins/EasyMobile/Demo/Models/tree.fbx
+  - Assets/Plugins/EasyMobile/Demo/Models/house.fbx
+  uvOverlapAssetList: 0000000000000000010100000101000000000000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000010100000101000001010000000000000000000001010000000000000000000001010000010100000000000001010000010100000000000001010000000000000101000000000000010100000000000001010000000000000000000000000000010100000101000000000000010100000101000000000000010100000101000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000010100000101000000000000010100000000000001010000010100000101000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 0
   gpuName: 
