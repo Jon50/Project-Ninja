@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using TongueTwister;
 using TongueTwister.Editor.Utilities;
 using TongueTwister.Utilities;
 using UnityEditor;
@@ -565,14 +566,14 @@ namespace TongueTwister.Editor.Tools.Custom.CSVImporter
                 UnityEditor.Editor.CreateEditor(
                         _csvImporterSettings, 
                         typeof(CsvImporterSettingsEditor)) 
-                    as CsvImporterSettingsEditor;
+	            as CsvImporterSettingsEditor;
         }
 
         private Locale GetLocaleFromCurrentTTW(string name, ISO3166Alpha2? countryCode, ISO639Alpha2? languageCode)
         {
             if (!string.IsNullOrWhiteSpace(name))
             {
-                var nameSearchResults = TongueTwisterWindow.CurrentWindow.LocalizationManager.SearchConfiguredLocalesByName(name).ToArray();
+	            var nameSearchResults = TongueTwisterWindow.CurrentWindow.LocalizationManager.SearchLocalesByName(name, LocalizationManager.LocaleSearchType.ConfiguredLocales).ToArray();
 
                 if (nameSearchResults.Length == 1)
                 {
@@ -590,7 +591,7 @@ namespace TongueTwister.Editor.Tools.Custom.CSVImporter
                 return null;
             }
             
-            var codeResults = TongueTwisterWindow.CurrentWindow.LocalizationManager.GetAllLocales((ISO3166Alpha2) countryCode, (ISO639Alpha2) languageCode).ToArray();
+            var codeResults = TongueTwisterWindow.CurrentWindow.LocalizationManager.GetLocalesByIsoCode((ISO3166Alpha2) countryCode, (ISO639Alpha2) languageCode).ToArray();
 
             if (codeResults.Length == 1)
             {

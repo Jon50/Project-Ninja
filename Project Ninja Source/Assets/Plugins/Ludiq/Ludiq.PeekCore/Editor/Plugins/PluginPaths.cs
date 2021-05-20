@@ -46,10 +46,10 @@ namespace Ludiq.PeekCore
 				{
 					_generatedRoot = PathUtility.GetRootPath("Ludiq.Generated.root", Path.Combine(Paths.assets, "Ludiq.Generated"), true);
 					
-					if (PathUtility.IsInFirstPassFolder(_generatedRoot))
-					{
-						Debug.LogWarning($"Plugin '{plugin.id}' has generated assets in a special Unity folder that makes it compile first.\nThis might cause issues with generated assets. Path:\n{_generatedRoot}");
-					}
+					//if (PathUtility.IsInFirstPassFolder(_generatedRoot))
+					//{
+					//	Debug.LogWarning($"Plugin '{plugin.id}' has generated assets in a special Unity folder that makes it compile first.\nThis might cause issues with generated assets. Path:\n{_generatedRoot}");
+					//}
 				}
 
 				return _generatedRoot;

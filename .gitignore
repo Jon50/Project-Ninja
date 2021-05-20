@@ -5,11 +5,14 @@
 [Bb]uilds/
 [Aa]ssets/AssetStoreTools*
 
-# Assets/Editor
+# Assets/Editor/
 x64/
 
 # Assets/Plugins/Procedural Worlds/Gaia/Asset Samples/
 NatureManufacture/
+
+# Assets/PrefabAssets/HEROIC/
+HEROIC/
 
 # Visual Studio cache directory
 .vs/

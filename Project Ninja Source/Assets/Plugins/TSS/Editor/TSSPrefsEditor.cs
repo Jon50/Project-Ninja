@@ -14,7 +14,7 @@ namespace TSS.Editor
     {
         #region Properties
 
-        private static bool prefsLoaded = false;
+	    private static bool prefsLoaded = false;
         private static bool foldOutEditor;
         private static bool foldOutRuntime;
 
@@ -48,8 +48,9 @@ namespace TSS.Editor
         #endregion
 
         #region GUI
-
-        [PreferenceItem("TSS")]
+#pragma warning disable 0618
+	    [PreferenceItem("TSS")]
+#pragma warning restore 0618
         public static void PreferencesGUI()
         {
             if (!prefsLoaded) Load();

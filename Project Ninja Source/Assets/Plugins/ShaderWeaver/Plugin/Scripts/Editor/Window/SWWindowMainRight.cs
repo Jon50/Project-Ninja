@@ -251,8 +251,10 @@ namespace ShaderWeaver
 				{
 					mc = new MenuCommand( this, 0 );
 					Shader shader = Shader.Find("Standard");
-					Material temp = new Material(shader); 
+					Material temp = new Material(shader);
+					#pragma warning disable 0618
 					UnityEditorInternal.InternalEditorUtility.SetupShaderMenu( temp );
+					#pragma warning restore 0618
 				}
 				EditorUtility.DisplayPopupMenu( r, "CONTEXT/ShaderPopup", mc );
 			}
