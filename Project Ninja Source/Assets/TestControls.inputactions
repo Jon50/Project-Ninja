@@ -1,0 +1,33 @@
+{
+    "name": "TestControls",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "e7545f74-a2ec-4388-afba-9d8a470321cc",
+            "actions": [
+                {
+                    "name": "OnClick",
+                    "type": "Button",
+                    "id": "819914d4-5db6-4c5b-a747-157b73b92e72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "418bb654-69aa-4157-bef2-572062a4a7b9",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
