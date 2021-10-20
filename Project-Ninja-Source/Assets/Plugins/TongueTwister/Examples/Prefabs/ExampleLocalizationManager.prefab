@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4412797901887525863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4412797901887525861}
+  - component: {fileID: 4412797901887525862}
+  m_Layer: 0
+  m_Name: ExampleLocalizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4412797901887525861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412797901887525863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4412797901887525862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412797901887525863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86aaf2181fc64a02a7c94d778a0fa746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _expandDebugSettings: 1
+  _enableInGameDebugWindow: 0
+  _inGameDebugWindowId: 7731512
+  _saveLastUsedLocaleToPlayerPrefs: 1
+  _lastUsedLocalePlayerPrefKey: TT:LastUsedPlayerLocale
+  _loadAdditionalLocalizationFiles: 1
+  _additionalLocalizationsFolderPathBuilder: {fileID: 11400000, guid: 13f8df0287579e641b7f20388cdc4f2f,
+    type: 2}
+  _defaultLocaleId: 0
+  _modelCollection:
+    Models:
+    - Type: 0
+      Name: root
+      Id: -1
+      Depth: -1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 0
+      Name: Greetings
+      Id: 0
+      Depth: 0
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Greeting1
+      Id: 1
+      Depth: 1
+      Notes: In general this should represent more of a "hello" type of greeting,
+        in relation to American English.
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 2
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: Hello
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 3
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: Hola
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Greeting2
+      Id: 4
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 5
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: Hi
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 6
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: "\xBFQu\xE9 pasa?"
+      AudioClip: {fileID: 0}
+    - Type: 0
+      Name: Dialogue
+      Id: 7
+      Depth: 0
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Phrase1
+      Id: 8
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 9
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: I have a big red dog named Clifford.
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 10
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: Tengo un gran perro rojo llamado Clifford.
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Phrase2
+      Id: 11
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 1
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 12
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: I love to sleep while it's raining.
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 13
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: Me encanta dormir mientras llueve.
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Phrase3
+      Id: 14
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 1
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 15
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: I love going to film festivals, there's always something interesting
+        to be seen.
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 16
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: Me encanta ir a festivales de cine, siempre hay algo interesante que
+        ver.
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Phrase4
+      Id: 17
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 1
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 18
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: Steam locomotives changed the way people travelled.
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 19
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: Las locomotoras de vapor cambiaron la forma de viajar de la gente.
+      AudioClip: {fileID: 0}
+    - Type: 1
+      Name: Phrase5
+      Id: 20
+      Depth: 1
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 1
+      LocaleId: -1
+      Text: 
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: English
+      Id: 21
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 0
+      Text: Purple is more red than it is green.
+      AudioClip: {fileID: 0}
+    - Type: 2
+      Name: Spanish
+      Id: 22
+      Depth: 2
+      Notes: 
+      ChildGroupsExpanded: 0
+      DisplayKeysExpanded: 0
+      LocalizationsExpanded: 0
+      LocaleId: 1
+      Text: "El p\xFArpura es m\xE1s rojo que verde."
+      AudioClip: {fileID: 0}
+  _configuredLocalesCollection:
+    Locales:
+    - Id: 0
+      DisplayName: English
+      LocalizedName: English
+      LocalizationCode: EN
+      SystemLanguage: 10
+      Icon: {fileID: 0}
+    - Id: 1
+      DisplayName: Spanish
+      LocalizedName: "Espa\xF1ol"
+      LocalizationCode: ES
+      SystemLanguage: 34
+      Icon: {fileID: 0}
