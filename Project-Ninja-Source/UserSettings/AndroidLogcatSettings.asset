@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "d4d2ccf9",
     "m_SelectedPackage": {
-        "deviceId": "d4d2ccf9",
-        "name": "com.DefaultCompany.ProjectNinjaSource",
-        "processId": 23891,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,12 +12,18 @@
             "deviceId": "d4d2ccf9",
             "name": "com.DefaultCompany.ProjectNinjaSource",
             "processId": 19787,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "d4d2ccf9",
             "name": "com.DefaultCompany.ProjectNinjaSource",
             "processId": 23891,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.android.launcher3",
+            "processId": 2380,
             "exited": false
         }
     ],
