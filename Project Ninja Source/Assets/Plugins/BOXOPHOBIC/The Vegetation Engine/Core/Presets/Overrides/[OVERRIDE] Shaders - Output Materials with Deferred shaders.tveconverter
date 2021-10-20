@@ -1,9 +1,0 @@
-*******************************************************************
-*                            OVERRIDE                             *
-*******************************************************************
-
-Shader SHADER_DEFAULT_PROP BOXOPHOBIC/The Vegetation Engine/Objects/Prop Standard Lit (Deferred)
-Shader SHADER_DEFAULT_CROSS BOXOPHOBIC/The Vegetation Engine/Vegetation/Cross Standard Lit (Deferred)
-Shader SHADER_DEFAULT_GRASS BOXOPHOBIC/The Vegetation Engine/Vegetation/Grass Standard Lit (Deferred)
-Shader SHADER_DEFAULT_BARK BOXOPHOBIC/The Vegetation Engine/Vegetation/Bark Standard Lit (Deferred)
-Shader SHADER_DEFAULT_LEAF BOXOPHOBIC/The Vegetation Engine/Vegetation/Leaf Standard Lit (Deferred)
