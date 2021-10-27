@@ -1,7 +1,6 @@
-﻿using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     public class MainMenuManager : Menu
     {
@@ -10,7 +9,7 @@ namespace TGM.FutureRacingGP.Managers
             Application.targetFrameRate = 300;
             QualitySettings.vSyncCount = 0;
 
-            if (LoadAssetsFromRemote.Scenes.Count == 0)
+            if(LoadAssetsFromRemote.resources.Count == 0)
                 Instantiate(new GameObject()).AddComponent(typeof(LoadAssetsFromRemote)).GetComponent<LoadAssetsFromRemote>().Start();
         }
     }

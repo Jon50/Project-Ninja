@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     [RequireComponent(typeof(AudioManager))]
     public class AudioSetup : MonoBehaviour

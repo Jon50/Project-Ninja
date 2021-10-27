@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace TGM.FutureRacingGP.Save
+namespace DefaultCompany.ProjectNinja.Save
 {
     public static class SavingSystem
     {

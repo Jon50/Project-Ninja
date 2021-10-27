@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TGM.FutureRacingGP.Preservable
+namespace DefaultCompany.ProjectNinja.Preservable
 {
     public interface IPreservable
     {

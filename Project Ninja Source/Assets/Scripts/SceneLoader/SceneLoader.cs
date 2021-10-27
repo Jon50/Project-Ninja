@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
-using static TGM.FutureRacingGP.Static.ConstantValues;
-using static TGM.FutureRacingGP.Save.SavingSystem;
+using static DefaultCompany.ProjectNinja.Static.ConstantValues;
+using static DefaultCompany.ProjectNinja.Save.SavingSystem;
 
 public enum Level { MainMenu }
 
-namespace TGM.FutureRacingGP.SceneLoadManagement
+namespace DefaultCompany.ProjectNinja.SceneLoadManagement
 {
     [CreateAssetMenu(menuName = "SceneLoader")]
     public class SceneLoader : ScriptableObject
@@ -54,7 +54,8 @@ namespace TGM.FutureRacingGP.SceneLoadManagement
                     return;
                 }
 
-                var location = LoadAssetsFromRemote.Scenes[CurrentSceneIndex];
+                // TODO: Remove hardcoded value
+                var location = LoadAssetsFromRemote.resources[0][CurrentSceneIndex];
                 var loading = Addressables.LoadSceneAsync(location);
                 loading.Completed += ( op ) =>
                 {

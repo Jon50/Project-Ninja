@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TGM.FutureRacingGP.Static
+namespace DefaultCompany.ProjectNinja.Static
 {
     public static class ConstantValues
     {

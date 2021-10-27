@@ -1,8 +1,8 @@
 using UnityEngine;
 
-using TGM.FutureRacingGP.Managers;
+using DefaultCompany.ProjectNinja.Managers;
 
-namespace TGM.FutureRacingGP.StateMachine
+namespace DefaultCompany.ProjectNinja.StateMachine
 {
     public class GamePlayingState : GameState<GameManager>
     {

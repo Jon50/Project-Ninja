@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: New Group
+  m_EditorClassIdentifier: 
+  m_GroupName: New Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e798eb223092e624e8a422087f54cb3b
+  m_SerializeEntries:
+  - m_GUID: 58bbd84c8b7bda04f86c12480a4ee6cd
+    m_Address: Assets/Scenes/MainMenu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - aws_start_scenes
+    m_MainAsset: {fileID: 102900000, guid: 58bbd84c8b7bda04f86c12480a4ee6cd, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 58bbd84c8b7bda04f86c12480a4ee6cd, type: 3}
+  - m_GUID: 4c20d0d0e5de04a4dad81b186a93e611
+    m_Address: Assets/Scenes/Game.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - aws_game_scenes
+    m_MainAsset: {fileID: 102900000, guid: 4c20d0d0e5de04a4dad81b186a93e611, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 4c20d0d0e5de04a4dad81b186a93e611, type: 3}
+  - m_GUID: 57798f0cdd6bb7c488cdf139b3a37678
+    m_Address: Assets/Prefabs/TestContent.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - aws_content
+    m_MainAsset: {fileID: 3525693664909181893, guid: 57798f0cdd6bb7c488cdf139b3a37678,
+      type: 3}
+    m_TargetAsset: {fileID: 3525693664909181893, guid: 57798f0cdd6bb7c488cdf139b3a37678,
+      type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 9e97b558892b19645bad04d171f7c55d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 285bdb86961f6e94986525cfe9a429f4, type: 2}

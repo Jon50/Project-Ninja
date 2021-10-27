@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TGM.FutureRacingGP.Locator
+namespace DefaultCompany.ProjectNinja.Locator
 {
     public class ServiceRegister<T> : MonoBehaviour, IService
     {

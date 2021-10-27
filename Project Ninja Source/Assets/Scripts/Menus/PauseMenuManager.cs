@@ -1,6 +1,6 @@
-using TGM.FutureRacingGP.StateMachine;
+using DefaultCompany.ProjectNinja.StateMachine;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     public class PauseMenuManager : Menu
     {

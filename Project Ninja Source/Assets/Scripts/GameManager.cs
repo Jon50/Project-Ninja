@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-using TGM.FutureRacingGP.StateMachine;
-using TGM.FutureRacingGP.Locator;
-using TGM.FutureRacingGP.SceneLoadManagement;
+using DefaultCompany.ProjectNinja.StateMachine;
+using DefaultCompany.ProjectNinja.Locator;
+using DefaultCompany.ProjectNinja.SceneLoadManagement;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     public class GameManager : ServiceRegister<GameManager>
     {

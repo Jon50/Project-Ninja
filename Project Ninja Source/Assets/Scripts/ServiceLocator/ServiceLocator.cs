@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace TGM.FutureRacingGP.Locator
+namespace DefaultCompany.ProjectNinja.Locator
 {
     public static class ServiceLocator
     {

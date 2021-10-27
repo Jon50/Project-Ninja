@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Locator;
 
-namespace TGM.FutureRacingGP.Preservable
+namespace DefaultCompany.ProjectNinja.Preservable
 {
     public class ValuePreserver : ServiceRegister<ValuePreserver>
     {

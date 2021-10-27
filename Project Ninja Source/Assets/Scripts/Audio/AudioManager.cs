@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Locator;
 
-using static TGM.FutureRacingGP.Static.ConstantValues;
-using static TGM.FutureRacingGP.Save.SavingSystem;
+using static DefaultCompany.ProjectNinja.Static.ConstantValues;
+using static DefaultCompany.ProjectNinja.Save.SavingSystem;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     public class AudioManager : ServiceRegister<AudioManager>
     {

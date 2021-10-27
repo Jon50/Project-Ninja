@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Locator;
 using System.Linq;
 
-namespace TGM.FutureRacingGP.StateMachine
+namespace DefaultCompany.ProjectNinja.StateMachine
 {
     public class StatePreparator : ServiceRegister<StatePreparator>
     {

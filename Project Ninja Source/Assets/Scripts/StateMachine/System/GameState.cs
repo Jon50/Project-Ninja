@@ -1,4 +1,4 @@
-namespace TGM.FutureRacingGP.StateMachine
+namespace DefaultCompany.ProjectNinja.StateMachine
 {
     public abstract class GameState<T>
     {
