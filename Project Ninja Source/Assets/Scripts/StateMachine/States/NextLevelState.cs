@@ -1,10 +1,10 @@
 using UnityEngine;
 
-using TGM.FutureRacingGP.Managers;
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Managers;
+using DefaultCompany.ProjectNinja.Locator;
 using System.Collections.Generic;
 
-namespace TGM.FutureRacingGP.StateMachine
+namespace DefaultCompany.ProjectNinja.StateMachine
 {
     public class NextLevelState : GameState<GameManager>
     {

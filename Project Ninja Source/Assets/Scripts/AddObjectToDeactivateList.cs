@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Locator;
 
 public class AddObjectToDeactivateList : MonoBehaviour
 {
@@ -13,26 +13,26 @@ public class AddObjectToDeactivateList : MonoBehaviour
 
     private void Start()
     {
-        if (!string.IsNullOrEmpty(_ignoreTag))
+        if(!string.IsNullOrEmpty(_ignoreTag))
         {
-            if (transform.root.CompareTag(_ignoreTag))
+            if(transform.root.CompareTag(_ignoreTag))
                 return;
         }
 
-        if (string.IsNullOrEmpty(_listName))
+        if(string.IsNullOrEmpty(_listName))
         {
             Debug.LogError($"{nameof(ActiveObjectsManager)} :: The listName is null or empty");
         }
 
         _activeObjectManager = ServiceLocator.Resolve<ActiveObjectsManager>();
 
-        if (_activeObjectManager != null)
+        if(_activeObjectManager != null)
         {
             var particles = GetComponentsInChildren<ParticleSystem>(includeInactive: true);
 
-            if (_types == TypesToAdd.ParticleSystem && particles.Length > 0)
+            if(_types == TypesToAdd.ParticleSystem && particles.Length > 0)
             {
-                for (int i = 0; i < particles.Length; i++)
+                for(int i = 0; i < particles.Length; i++)
                 {
                     _activeObjectManager.AddObjects(_listName, particles[i].transform, particles[i]);
                 }
@@ -40,9 +40,9 @@ public class AddObjectToDeactivateList : MonoBehaviour
 
             var renderers = GetComponentsInChildren<MeshRenderer>(includeInactive: true);
 
-            if (_types == TypesToAdd.MeshRenderer && renderers.Length > 0)
+            if(_types == TypesToAdd.MeshRenderer && renderers.Length > 0)
             {
-                for (int i = 0; i < renderers.Length; i++)
+                for(int i = 0; i < renderers.Length; i++)
                 {
                     _activeObjectManager.AddObjects(_listName, renderers[i].transform, renderers[i]);
                 }

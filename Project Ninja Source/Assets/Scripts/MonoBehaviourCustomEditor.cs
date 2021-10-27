@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEditor;
 using System.Reflection;
 
-namespace TGM.Custom
+namespace DefaultCompany.Custom
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class ExposeMethodInEditorAttribute : Attribute { }
 }
 
 
-namespace TGM.Custom
+namespace DefaultCompany.Custom
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(MonoBehaviour), editorForChildClasses: true)]

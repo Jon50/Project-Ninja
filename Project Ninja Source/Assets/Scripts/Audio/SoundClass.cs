@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace TGM.FutureRacingGP.Managers
+namespace DefaultCompany.ProjectNinja.Managers
 {
     [CreateAssetMenu(menuName = "TGM-Glow-Car-Racing/New Sound")]
     public class SoundClass : ScriptableObject

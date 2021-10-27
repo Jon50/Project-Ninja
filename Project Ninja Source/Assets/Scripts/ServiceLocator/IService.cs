@@ -1,4 +1,4 @@
-namespace TGM.FutureRacingGP.Locator
+namespace DefaultCompany.ProjectNinja.Locator
 {
     public interface IService
     {

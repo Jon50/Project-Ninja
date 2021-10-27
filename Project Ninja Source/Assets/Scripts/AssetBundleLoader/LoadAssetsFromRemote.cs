@@ -5,24 +5,27 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
+using System.Linq;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class LoadAssetsFromRemote : MonoBehaviour
 {
-    [SerializeField] private string _label = "tgm_remote";
+    [SerializeField] private string[] _labels;
     [SerializeField] private Slider _slider;
 
     private CanvasGroup _canvasGroup;
 
     public static LoadAssetsFromRemote Instance;
-    public static List<IResourceLocation> Scenes;
+    //public static List<IResourceLocation> Scenes;
+    public static List<List<IResourceLocation>> resources;
 
     private void Awake()
     {
-        if (Instance == null)
+        if(Instance == null)
         {
             Instance = this;
-            Scenes = new List<IResourceLocation>();
+            //Scenes = new List<IResourceLocation>();
+            resources = new List<List<IResourceLocation>>();
 
             _canvasGroup = GetComponent<CanvasGroup>();
             _canvasGroup.alpha = 1;
@@ -36,48 +39,57 @@ public class LoadAssetsFromRemote : MonoBehaviour
         Time.timeScale = 1;
 
         var isDone = false;
-        while (_canvasGroup?.alpha != 0f)
+        while(_canvasGroup?.alpha != 0f)
         {
             _canvasGroup.alpha -= Time.deltaTime;
-            yield return 0f;
+            yield return null;
         }
 
-        if (_canvasGroup.alpha == 0f)
+        if(_canvasGroup.alpha == 0f)
             isDone = true;
 
-        yield return StartCoroutine(LoadAssets(_label));
+        for(int i = 0; i < _labels.Length; i++)
+            yield return StartCoroutine(LoadAssets(_labels[i], labelIndex: i));
+
         yield return new WaitUntil(() => isDone);
 
-        while (_canvasGroup?.alpha != 1f)
+        while(_canvasGroup?.alpha != 1f)
         {
             _canvasGroup.alpha += Time.deltaTime;
-            yield return 0f;
+            yield return null;
         }
 
-        if (SceneManager.GetActiveScene().name != nameof(Level.MainMenu))
-            SceneManager.LoadSceneAsync(nameof(Level.MainMenu));
+        if(SceneManager.GetActiveScene().name != nameof(Level.MainMenu))
+            Addressables.LoadSceneAsync(resources[0].First(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))/*.Where(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))*/);
     }
 
-    private IEnumerator LoadAssets(string label)
+    private IEnumerator LoadAssets( string label, int labelIndex )
     {
         var isDone = false;
         var locations = Addressables.LoadResourceLocationsAsync(label);
-        locations.Completed += (operation) =>
+        locations.Completed += ( operation ) =>
         {
+            resources.Add(new List<IResourceLocation>());
+
+            var resourcesList = resources[labelIndex];
+
             int index = -1;
-            foreach (var location in operation.Result)
+            foreach(var location in operation.Result)
             {
                 index++;
-                if (Scenes.Contains(location))
+                if(resourcesList.Contains(location) /*Scenes.Contains(location)*/)
                 {
-                    Scenes[index] = location;
+                    //Scenes[index] = location;
+                    resourcesList[index] = location;
                     continue;
                 }
 
-                Scenes.Add(location);
+                //Scenes.Add(location);
+                resourcesList.Add(location);
             }
 
-            Scenes.Sort((a, b) => a.InternalId.CompareTo(b.InternalId));
+            //Scenes.Sort(( a, b ) => a.InternalId.CompareTo(b.InternalId));
+            resourcesList.Sort(( a, b ) => a.InternalId.CompareTo(b.InternalId));
             isDone = true;
         };
 
@@ -86,19 +98,19 @@ public class LoadAssetsFromRemote : MonoBehaviour
         isDone = false;
 
         var download = Addressables.DownloadDependenciesAsync(label);
-        download.Completed += (operation) =>
+        download.Completed += ( operation ) =>
         {
             isDone = true;
 
-            if (_slider != null)
+            if(_slider != null)
                 _slider.value = _slider.maxValue;
         };
 
-        while (!isDone)
+        while(!isDone)
         {
-            if (_slider != null)
-                _slider.value = download.PercentComplete;
-            yield return 0f;
+            if(_slider != null)
+                _slider.value = (download.PercentComplete + locations.PercentComplete);
+            yield return null;
         }
 
         yield return new WaitUntil(() => isDone);

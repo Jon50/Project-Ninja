@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace TGM.FutureRacingGP.StateMachine
+namespace DefaultCompany.ProjectNinja.StateMachine
 {
     public class StateMachine<T>
     {

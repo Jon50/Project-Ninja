@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TGM.FutureRacingGP.Locator;
+using DefaultCompany.ProjectNinja.Locator;
 
 
 public class ActiveObjectsManager : ServiceRegister<ActiveObjectsManager>
