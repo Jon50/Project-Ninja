@@ -1,4 +1,4 @@
-namespace DefaultCompany.ProjectNinja.Locator
+namespace KadoNem.ProjectNinja.Locator
 {
     public interface IService
     {

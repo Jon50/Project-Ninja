@@ -491,10 +491,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1016179326}
+  - component: {fileID: 1016179327}
   - component: {fileID: 1016179328}
   - component: {fileID: 1016179325}
   - component: {fileID: 1016179324}
-  - component: {fileID: 1016179327}
   m_Layer: 0
   m_Name: LoadAssetsFromRemote
   m_TagString: Untagged
@@ -514,10 +514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f2620a695c86449963136471c16644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _labels:
-  - aws_start_scenes
-  - aws_game_scenes
-  - aws_content
   _slider: {fileID: 897483040}
 --- !u!225 &1016179325
 CanvasGroup:

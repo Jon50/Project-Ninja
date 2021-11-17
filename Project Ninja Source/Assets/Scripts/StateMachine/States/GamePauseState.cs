@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using DefaultCompany.ProjectNinja.Locator;
-using DefaultCompany.ProjectNinja.Managers;
+using KadoNem.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Managers;
 
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class GamePauseState : GameState<GameManager>
     {

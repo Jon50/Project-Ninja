@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Locator;
 
-namespace DefaultCompany.ProjectNinja.Preservable
+namespace KadoNem.ProjectNinja.Preservable
 {
     public class ValuePreserver : ServiceRegister<ValuePreserver>
     {

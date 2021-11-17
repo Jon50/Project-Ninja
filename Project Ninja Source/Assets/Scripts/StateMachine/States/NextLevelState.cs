@@ -1,10 +1,10 @@
 using UnityEngine;
 
-using DefaultCompany.ProjectNinja.Managers;
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Managers;
+using KadoNem.ProjectNinja.Locator;
 using System.Collections.Generic;
 
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class NextLevelState : GameState<GameManager>
     {

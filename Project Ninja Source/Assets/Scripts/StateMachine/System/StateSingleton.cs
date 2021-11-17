@@ -1,4 +1,4 @@
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class StateSingleton<T> where T : new()
     {

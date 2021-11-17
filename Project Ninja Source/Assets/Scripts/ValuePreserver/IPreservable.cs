@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DefaultCompany.ProjectNinja.Preservable
+namespace KadoNem.ProjectNinja.Preservable
 {
     public interface IPreservable
     {

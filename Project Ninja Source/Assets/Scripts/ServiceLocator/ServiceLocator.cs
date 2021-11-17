@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DefaultCompany.ProjectNinja.Locator
+namespace KadoNem.ProjectNinja.Locator
 {
     public static class ServiceLocator
     {

@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEditor;
 using System.Reflection;
 
-namespace DefaultCompany.Custom
+namespace KadoNem.Custom
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class ExposeMethodInEditorAttribute : Attribute { }
 }
 
 
-namespace DefaultCompany.Custom
+namespace KadoNem.Custom
 {
     [CanEditMultipleObjects]
     [CustomEditor(typeof(MonoBehaviour), editorForChildClasses: true)]

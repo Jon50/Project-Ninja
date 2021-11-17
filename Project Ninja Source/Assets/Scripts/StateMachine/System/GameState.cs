@@ -1,4 +1,4 @@
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public abstract class GameState<T>
     {

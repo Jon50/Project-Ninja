@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     [RequireComponent(typeof(AudioManager))]
     public class AudioSetup : MonoBehaviour

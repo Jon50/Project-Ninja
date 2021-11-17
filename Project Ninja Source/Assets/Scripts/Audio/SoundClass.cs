@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     [CreateAssetMenu(menuName = "TGM-Glow-Car-Racing/New Sound")]
     public class SoundClass : ScriptableObject

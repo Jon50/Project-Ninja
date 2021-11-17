@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Locator;
 
 public class AddObjectToDeactivateList : MonoBehaviour
 {

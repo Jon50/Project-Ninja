@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Locator;
 
-using static DefaultCompany.ProjectNinja.Static.ConstantValues;
-using static DefaultCompany.ProjectNinja.Save.SavingSystem;
+using static KadoNem.ProjectNinja.Static.ConstantValues;
+using static KadoNem.ProjectNinja.Save.SavingSystem;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     public class AudioManager : ServiceRegister<AudioManager>
     {
@@ -21,8 +21,7 @@ namespace DefaultCompany.ProjectNinja.Managers
 
         private AudioSource _currentMusicPlaying;
 
-
-        public void Initialize(List<SoundClass> musicSounds, List<SoundClass> sfxSounds, AudioMixer audioMixer)
+        public void Initialize( List<SoundClass> musicSounds, List<SoundClass> sfxSounds, AudioMixer audioMixer )
         {
             _audioMixer = audioMixer;
             _musicSounds = musicSounds;
@@ -39,22 +38,22 @@ namespace DefaultCompany.ProjectNinja.Managers
             yield return new WaitForSeconds(1f);
             UpdateAudioSettings();
 
-            if (_playFirstTrack)
+            if(_playFirstTrack)
                 PlayMusic(_musicSounds[0].SoundName);
 
-            if (_testSoundFX)
+            if(_testSoundFX)
                 PlaySFX(_soundNameToTest);
         }
 
 
-        public AudioSource PlayMusic(string musicName)
+        public AudioSource PlayMusic( string musicName )
         {
-            if (_musicSounds.IsNull() || string.IsNullOrEmpty(musicName))
+            if(_musicSounds.IsNull() || string.IsNullOrEmpty(musicName))
                 return null;
 
-            foreach (var music in _musicSounds)
+            foreach(var music in _musicSounds)
             {
-                if (music.SoundName == musicName && !music.audioSource.isPlaying)
+                if(music.SoundName == musicName && !music.audioSource.isPlaying)
                 {
                     _currentMusicPlaying?.Stop();
                     _currentMusicPlaying = music.audioSource;
@@ -66,29 +65,29 @@ namespace DefaultCompany.ProjectNinja.Managers
         }
 
 
-        public void PlaySFX(string sfxName)
+        public void PlaySFX( string sfxName )
         {
-            if (_sfxSounds.IsNull() || string.IsNullOrEmpty(sfxName))
+            if(_sfxSounds.IsNull() || string.IsNullOrEmpty(sfxName))
                 return;
 
-            foreach (var sfx in _sfxSounds)
+            foreach(var sfx in _sfxSounds)
             {
-                if (sfx.SoundName == sfxName)
+                if(sfx.SoundName == sfxName)
                     sfx.audioSource.PlayOneShot(sfx.AudioClip);
             }
         }
 
 
-        public void PlaySFXAtPoint(string sfxName, Transform objRef)
+        public void PlaySFXAtPoint( string sfxName, Transform objRef )
         {
-            if (_sfxSounds.IsNull() || string.IsNullOrEmpty(sfxName))
+            if(_sfxSounds.IsNull() || string.IsNullOrEmpty(sfxName))
                 return;
 
-            foreach (var sfx in _sfxSounds)
+            foreach(var sfx in _sfxSounds)
             {
-                if (sfx.SoundName == sfxName)
+                if(sfx.SoundName == sfxName)
                 {
-                    if (!sfx.SpacialSources.ContainsKey((objRef, sfxName)))
+                    if(!sfx.SpacialSources.ContainsKey((objRef, sfxName)))
                     {
                         var source = objRef.gameObject.AddComponent<AudioSource>();
 

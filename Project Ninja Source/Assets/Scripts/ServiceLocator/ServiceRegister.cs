@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DefaultCompany.ProjectNinja.Locator
+namespace KadoNem.ProjectNinja.Locator
 {
     public class ServiceRegister<T> : MonoBehaviour, IService
     {

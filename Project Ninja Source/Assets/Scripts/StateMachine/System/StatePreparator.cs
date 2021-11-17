@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Locator;
 using System.Linq;
 
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class StatePreparator : ServiceRegister<StatePreparator>
     {

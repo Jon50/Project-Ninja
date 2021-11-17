@@ -6,11 +6,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
 using System.Linq;
+using System;
+
+public enum ResourceLabels { aws_start_scenes, aws_game_scenes, aws_content }
 
 [RequireComponent(typeof(CanvasGroup))]
 public class LoadAssetsFromRemote : MonoBehaviour
 {
-    [SerializeField] private string[] _labels;
+    //[SerializeField] private ResourceLabels _labels;
     [SerializeField] private Slider _slider;
 
     private CanvasGroup _canvasGroup;
@@ -48,8 +51,10 @@ public class LoadAssetsFromRemote : MonoBehaviour
         if(_canvasGroup.alpha == 0f)
             isDone = true;
 
-        for(int i = 0; i < _labels.Length; i++)
-            yield return StartCoroutine(LoadAssets(_labels[i], labelIndex: i));
+        var labels = Enum.GetNames(typeof(ResourceLabels));
+
+        for(int i = 0; i < labels.Length; i++)
+            yield return StartCoroutine(LoadAssets(labels[i], labelIndex: i));
 
         yield return new WaitUntil(() => isDone);
 
@@ -60,7 +65,7 @@ public class LoadAssetsFromRemote : MonoBehaviour
         }
 
         if(SceneManager.GetActiveScene().name != nameof(Level.MainMenu))
-            Addressables.LoadSceneAsync(resources[0].First(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))/*.Where(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))*/);
+            Addressables.LoadSceneAsync(resources[(int)ResourceLabels.aws_start_scenes].First(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))/*.Where(( x ) => x.InternalId.Contains(nameof(Level.MainMenu)))*/);
     }
 
     private IEnumerator LoadAssets( string label, int labelIndex )

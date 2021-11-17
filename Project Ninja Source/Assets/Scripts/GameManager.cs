@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-using DefaultCompany.ProjectNinja.StateMachine;
-using DefaultCompany.ProjectNinja.Locator;
-using DefaultCompany.ProjectNinja.SceneLoadManagement;
+using KadoNem.ProjectNinja.StateMachine;
+using KadoNem.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.SceneLoadManagement;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     public class GameManager : ServiceRegister<GameManager>
     {

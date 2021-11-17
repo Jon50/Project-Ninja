@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     public abstract class Menu : MonoBehaviour
     {

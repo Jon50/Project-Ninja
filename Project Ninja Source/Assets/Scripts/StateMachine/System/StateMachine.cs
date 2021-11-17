@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class StateMachine<T>
     {

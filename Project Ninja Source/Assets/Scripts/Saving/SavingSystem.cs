@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using System;
 using System.IO;
 using System.Runtime.Serialization;
+using static KadoNem.ProjectNinja.Static.ConstantValues;
 
-namespace DefaultCompany.ProjectNinja.Save
+namespace KadoNem.ProjectNinja.Save
 {
     public static class SavingSystem
     {
@@ -31,11 +31,12 @@ namespace DefaultCompany.ProjectNinja.Save
             if(!string.IsNullOrEmpty(newDirectory) && !Directory.Exists(directoryPath))
                 Directory.CreateDirectory(directoryPath).Attributes = FileAttributes.Hidden;
 
-            using(FileStream stream = File.Open(savePath, FileMode.Create))
-            {
-                DataContractSerializer dataContract = new DataContractSerializer(data.GetType());
-                dataContract.WriteObject(stream, data);
-            }
+            if(!Directory.Exists(GetSavePath(DATA_FOLDER)))
+                Directory.CreateDirectory(GetSavePath(DATA_FOLDER)).Attributes = FileAttributes.Hidden;
+
+            using FileStream stream = File.Open(savePath, FileMode.Create);
+            DataContractSerializer dataContract = new DataContractSerializer(data.GetType());
+            dataContract.WriteObject(stream, data);
         }
 
         public static T LoadValue<T>( string saveFile, T defaultValue = default, bool cloudSave = false )
@@ -67,13 +68,9 @@ namespace DefaultCompany.ProjectNinja.Save
             if(!File.Exists(savePath))
                 return defaultValue;
 
-            var value = (T)default;
-
-            using(FileStream stream = File.Open(savePath, FileMode.Open))
-            {
-                DataContractSerializer dataContract = new DataContractSerializer(typeof(T));
-                value = (T)dataContract.ReadObject(stream);
-            }
+            using FileStream stream = File.Open(savePath, FileMode.Open);
+            DataContractSerializer dataContract = new DataContractSerializer(typeof(T));
+            var value = (T)dataContract.ReadObject(stream);
 
             return value;
         }

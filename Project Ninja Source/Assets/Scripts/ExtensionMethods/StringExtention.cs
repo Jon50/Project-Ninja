@@ -2,13 +2,9 @@
 using System.Text.RegularExpressions;
 using Random = UnityEngine.Random;
 
-public static class StringExtent
+public static class StringExtention
 {
-    public static string SplitCamelCase( this string element )
-    {
-        return Regex.Replace(Regex.Replace(element, @"(\P{Ll})(\P{Ll}\p{Ll})", "$1 $2"), @"(\p{Ll})(\P{Ll})", "$1 $2");
-    }
-
+    public static string SplitCamelCase( this string element ) => Regex.Replace(Regex.Replace(element, @"(\P{Ll})(\P{Ll}\p{Ll})", "$1 $2"), @"(\p{Ll})(\P{Ll})", "$1 $2");
 
     private const int _seed = 404;
     private const int _maxRange = 123;

@@ -1,6 +1,6 @@
-using DefaultCompany.ProjectNinja.StateMachine;
+using KadoNem.ProjectNinja.StateMachine;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     public class PauseMenuManager : Menu
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultCompany.ProjectNinja.Managers
+namespace KadoNem.ProjectNinja.Managers
 {
     public class MainMenuManager : Menu
     {
@@ -10,7 +10,7 @@ namespace DefaultCompany.ProjectNinja.Managers
             QualitySettings.vSyncCount = 0;
 
             if(LoadAssetsFromRemote.resources.Count == 0)
-                Instantiate(new GameObject()).AddComponent(typeof(LoadAssetsFromRemote)).GetComponent<LoadAssetsFromRemote>().Start();
+                Instantiate(new GameObject()).AddComponent<LoadAssetsFromRemote>().GetComponent<LoadAssetsFromRemote>().Start();
         }
     }
 }

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-using DefaultCompany.ProjectNinja.Managers;
+using KadoNem.ProjectNinja.Managers;
 
-namespace DefaultCompany.ProjectNinja.StateMachine
+namespace KadoNem.ProjectNinja.StateMachine
 {
     public class GamePlayingState : GameState<GameManager>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DefaultCompany.ProjectNinja.Static
+namespace KadoNem.ProjectNinja.Static
 {
     public static class ConstantValues
     {

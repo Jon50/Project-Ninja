@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DefaultCompany.ProjectNinja.Locator;
+using KadoNem.ProjectNinja.Locator;
 
 
 public class ActiveObjectsManager : ServiceRegister<ActiveObjectsManager>
