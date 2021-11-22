@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "emulator-5554",
+    "m_SelectedDeviceId": "d4d2ccf9",
     "m_SelectedPackage": {
-        "deviceId": "emulator-5554",
+        "deviceId": "d4d2ccf9",
         "name": "com.KadoNem.ProjectNinjaSource",
-        "processId": 13963,
+        "processId": 22526,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,66 +24,48 @@
             "deviceId": "d4d2ccf9",
             "name": "com.android.launcher3",
             "processId": 2380,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 22526,
             "exited": false
         },
         {
             "deviceId": "emulator-5554",
             "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 6785,
+            "processId": 12967,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 13969,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 14849,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 15457,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 16003,
             "exited": true
         },
         {
             "deviceId": "emulator-5554",
             "name": "com.bluestacks.launcher",
-            "processId": 2329,
-            "exited": false
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 9879,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 10332,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 10792,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 11921,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 12590,
-            "exited": false
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 13062,
-            "exited": false
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 13517,
-            "exited": false
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 13963,
+            "processId": 2304,
             "exited": false
         }
     ],

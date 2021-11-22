@@ -58,6 +58,12 @@ public class LoadAssetsFromRemote : MonoBehaviour
 
         yield return new WaitUntil(() => isDone);
 
+        if(resources.Count <= 0)
+        {
+            Debug.LogError("Resources not loaded");
+            yield break;
+        }
+
         while(_canvasGroup?.alpha != 1f)
         {
             _canvasGroup.alpha += Time.deltaTime;
