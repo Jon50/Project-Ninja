@@ -1,3 +1,6 @@
+// Amplify Impostors
+// Copyright (c) Amplify Creations, Lda <info@amplify.pt>
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
@@ -231,3 +234,4 @@ namespace AmplifyImpostors
 		}
 	}
 }
+#endif

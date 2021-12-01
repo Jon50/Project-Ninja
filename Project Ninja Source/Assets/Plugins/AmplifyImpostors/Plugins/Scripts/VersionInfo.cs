@@ -12,7 +12,7 @@ namespace AmplifyImpostors
 		public const byte Major = 0;
 		public const byte Minor = 9;
 		public const byte Release = 7;
-		public static byte Revision = 11;
+		public static byte Revision = 13;
 
 		public static string StaticToString()
 		{

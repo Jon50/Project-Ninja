@@ -2,7 +2,7 @@
 // Copyright (c) Amplify Creations, Lda <info@amplify.pt>
 
 //#define AI_DEBUG_MODE
-
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditorInternal;
@@ -1495,3 +1495,4 @@ namespace AmplifyImpostors
 		}
 	}
 }
+#endif

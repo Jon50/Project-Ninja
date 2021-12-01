@@ -14,6 +14,8 @@ Shader /*ase_name*/ "Hidden/Impostors/Runtime/Standard Legacy"/*end*/
 				Specular Color:SetDefine:_SPECULAR_SETUP 1
 			Port:ForwardBase:Alpha Clip Threshold
 				On:SetDefine:_ALPHATEST_ON 1
+			Port:ForwardBase:Local Vertex
+				On:SetDefine:_VERTEX_OFFSET 1
 		*/
 		CGINCLUDE
 		#pragma target 3.0
@@ -817,7 +819,11 @@ Shader /*ase_name*/ "Hidden/Impostors/Runtime/Standard Legacy"/*end*/
 				/*ase_vert_code:v=appdata_full;o=v2f_surf*/
 
 				v.vertex.xyz += /*ase_vert_out:Local Vertex;Float3;_Vertex*/ float3(0,0,0) /*end*/;
+#if defined( _VERTEX_OFFSET )
 				TRANSFER_SHADOW_CASTER_NORMALOFFSET(o)
+#else
+				TRANSFER_SHADOW_CASTER(o)
+#endif
 				return o;
 			}
 

@@ -1,7 +1,7 @@
 // Amplify Impostors
 // Copyright (c) Amplify Creations, Lda <info@amplify.pt>
 
-#if AMPLIFY_SHADER_EDITOR
+#if AMPLIFY_SHADER_EDITOR && UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using System;
@@ -1286,7 +1286,12 @@ namespace AmplifyShaderEditor
 			IOUtils.AddFunctionLine( ref m_functionBody, "float4 remapNormal = normalSample * 2 - 1; " );
 			IOUtils.AddFunctionLine( ref m_functionBody, "float3 worldNormal = normalize( mul( (float3x3)ai_ObjectToWorld, remapNormal.xyz ) );" );
 			IOUtils.AddFunctionLine( ref m_functionBody, "o.Normal = worldNormal;" );
-			IOUtils.AddFunctionLine( ref m_functionBody, "float depth = remapNormal.a * "+ m_depthProp.PropertyName + " * 0.5 * length( ai_ObjectToWorld[ 2 ].xyz );" );
+			IOUtils.AddFunctionLine(ref m_functionBody, "#if defined(UNITY_PASS_SHADOWCASTER) // Standard RP fix for deferred path");
+			IOUtils.AddFunctionLine(ref m_functionBody, "float depth = remapNormal.a * " + m_depthProp.PropertyName + " * 0.4999 * length( ai_ObjectToWorld[ 2 ].xyz );");
+			IOUtils.AddFunctionLine(ref m_functionBody, "#else");
+			IOUtils.AddFunctionLine(ref m_functionBody, "float depth = remapNormal.a * " + m_depthProp.PropertyName + " * 0.5 * length( ai_ObjectToWorld[ 2 ].xyz );");
+			IOUtils.AddFunctionLine(ref m_functionBody, "#endif");
+
 			if( !isSRP )
 			{
 				IOUtils.AddFunctionLine( ref m_functionBody, "#if defined(SHADOWS_DEPTH)" );
@@ -1653,8 +1658,13 @@ namespace AmplifyShaderEditor
 			IOUtils.AddFunctionLine( ref m_functionBody, "float3 worldNormal = normalize( mul( (float3x3)ai_ObjectToWorld, localNormal ) );" );
 			IOUtils.AddFunctionLine( ref m_functionBody, "o.Normal = worldNormal;" );
 			IOUtils.AddFunctionLine( ref m_functionBody, "float3 viewPos = interpViewPos.xyz;" );
+
+			IOUtils.AddFunctionLine(ref m_functionBody, "#if defined(UNITY_PASS_SHADOWCASTER) // Standard RP fix for deferred path");
 			IOUtils.AddFunctionLine( ref m_functionBody, "float depthOffset = ( ( parallaxSample1.a * weights.x + parallaxSample2.a * weights.y + parallaxSample3.a * weights.z ) - 0.5001 /** 2.0 - 1.0*/ ) /** 0.5*/ * "+ m_depthProp.PropertyName + " * length( ai_ObjectToWorld[ 2 ].xyz );" );
-			if( !isSRP )
+			IOUtils.AddFunctionLine(ref m_functionBody, "#else");
+			IOUtils.AddFunctionLine(ref m_functionBody, "float depthOffset = ( ( parallaxSample1.a * weights.x + parallaxSample2.a * weights.y + parallaxSample3.a * weights.z ) - 0.5 /** 2.0 - 1.0*/ ) /** 0.5*/ * " + m_depthProp.PropertyName + " * length( ai_ObjectToWorld[ 2 ].xyz );");
+			IOUtils.AddFunctionLine(ref m_functionBody, "#endif");
+			if ( !isSRP )
 			{
 				IOUtils.AddFunctionLine( ref m_functionBody, "#if defined(SHADOWS_DEPTH)" );
 				IOUtils.AddFunctionLine( ref m_functionBody, "if( unity_LightShadowBias.y == 1.0 ) " );

@@ -1,4 +1,17 @@
 Release Notes:
+v0.9.7 rev013
+* Fixes:
+    * Fixed issue on editor code trying to be incorrectly added to builds
+
+v0.9.7 rev012
+* Fixes:
+    * Fixed shadow flickering issue on BiRP runtime template
+    * Fixed LOD Cross Fade issue on HDRP runtime template
+    * Fixed issue with constant color gamma operations on HDRP runtime template
+
+* Improvements:
+    * Added assembly definition files
+
 v0.9.7 rev011
 * Fixes:
     * Fixed compilation errors on some variants over runtime octahedron, spherical and template on HDRP10
