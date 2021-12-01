@@ -1,71 +1,89 @@
 {
-    "m_SelectedDeviceId": "d4d2ccf9",
+    "m_SelectedDeviceId": "emulator-5554",
     "m_SelectedPackage": {
-        "deviceId": "d4d2ccf9",
+        "deviceId": "emulator-5554",
         "name": "com.KadoNem.ProjectNinjaSource",
-        "processId": 22526,
+        "processId": 21200,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "d4d2ccf9",
-            "name": "com.DefaultCompany.ProjectNinjaSource",
-            "processId": 19787,
-            "exited": true
-        },
-        {
-            "deviceId": "d4d2ccf9",
-            "name": "com.DefaultCompany.ProjectNinjaSource",
-            "processId": 23891,
-            "exited": true
-        },
-        {
-            "deviceId": "d4d2ccf9",
-            "name": "com.android.launcher3",
-            "processId": 2380,
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 26143,
             "exited": true
         },
         {
             "deviceId": "d4d2ccf9",
             "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 22526,
+            "processId": 26480,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 29691,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 30194,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 30926,
+            "exited": true
+        },
+        {
+            "deviceId": "d4d2ccf9",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 1137,
             "exited": false
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 12967,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 13969,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 14849,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 15457,
-            "exited": true
-        },
-        {
-            "deviceId": "emulator-5554",
-            "name": "com.KadoNem.ProjectNinjaSource",
-            "processId": 16003,
-            "exited": true
         },
         {
             "deviceId": "emulator-5554",
             "name": "com.bluestacks.launcher",
             "processId": 2304,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 8393,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.bluestacks.launcher",
+            "processId": 2264,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 12345,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 13340,
+            "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 13991,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.KadoNem.ProjectNinjaSource",
+            "processId": 21200,
             "exited": false
         }
     ],

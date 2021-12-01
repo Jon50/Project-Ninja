@@ -3,3 +3,4 @@
 -nowarn:0618
 -nowarn:0414
 -nowarn:0168
+-r:System.IO.Compression.FileSystem.dll

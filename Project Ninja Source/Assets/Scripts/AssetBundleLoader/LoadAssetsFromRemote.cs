@@ -7,7 +7,11 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
 using System.Linq;
 using System;
+using System.Net;
+using System.IO.Compression;
+using System.IO;
 
+public enum AddressablesProfiles { DEFAULT, AWS, CLOUD, CUSTOM }
 public enum ResourceLabels { aws_start_scenes, aws_game_scenes, aws_content }
 
 [RequireComponent(typeof(CanvasGroup))]
@@ -15,8 +19,13 @@ public class LoadAssetsFromRemote : MonoBehaviour
 {
     //[SerializeField] private ResourceLabels _labels;
     [SerializeField] private Slider _slider;
+    [SerializeField] private AddressablesProfiles _profile = AddressablesProfiles.AWS;
+    [SerializeField] private string _customCatalogLocation;
+    [SerializeField] private string _customResourceLocation;
 
     private CanvasGroup _canvasGroup;
+    private string _oldHash;
+    private string _currentHash;
 
     public static LoadAssetsFromRemote Instance;
     //public static List<IResourceLocation> Scenes;
@@ -35,11 +44,49 @@ public class LoadAssetsFromRemote : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        Time.timeScale = 1;
     }
 
     public IEnumerator Start()
     {
-        Time.timeScale = 1;
+        if(_profile == AddressablesProfiles.CUSTOM)
+        {
+            var webClient = new WebClient();
+            webClient.DownloadFile(new Uri(_customCatalogLocation), Application.persistentDataPath + @"\catalog.zip");
+            webClient.DownloadFileCompleted += ( sender, completed ) => { };
+
+            if(Directory.Exists(Application.persistentDataPath + @"\catalog"))
+            {
+                _oldHash = File.ReadAllText(Directory.GetFiles(Application.persistentDataPath + @"\catalog", "*.hash")[0]);
+                Debug.Log("Old Hash: " + _oldHash);
+                Directory.Delete(Application.persistentDataPath + @"\catalog", true);
+            }
+
+            ZipFile.ExtractToDirectory(Application.persistentDataPath + @"\catalog.zip", Application.persistentDataPath);
+
+            _currentHash = File.ReadAllText(Directory.GetFiles(Application.persistentDataPath + @"\catalog", "*.hash")[0]);
+
+            Debug.Log("Current Hash: " + _currentHash);
+            Debug.Log(_oldHash == _currentHash);
+
+            if(string.IsNullOrEmpty(_oldHash) == true ? false : _oldHash != _currentHash)
+            {
+                Debug.Log("Hashed");
+                Directory.Delete(Application.persistentDataPath + @"\android", true);
+            }
+
+            Debug.Log(Directory.Exists(Application.persistentDataPath + @"\" + Application.platform));
+            Debug.Log(Application.persistentDataPath + @"\" + Application.platform);
+
+            if(Directory.Exists(Application.persistentDataPath + @"\android") == false)
+            {
+                Debug.Log("Resources Downloaded");
+                webClient.DownloadFile(new Uri(_customResourceLocation), Application.persistentDataPath + @"\resources.zip");
+                webClient.DownloadFileCompleted += ( sender, completed ) => { };
+                ZipFile.ExtractToDirectory(Application.persistentDataPath + @"\resources.zip", Application.persistentDataPath);
+            }
+        }
 
         var isDone = false;
         while(_canvasGroup?.alpha != 0f)
@@ -58,7 +105,7 @@ public class LoadAssetsFromRemote : MonoBehaviour
 
         yield return new WaitUntil(() => isDone);
 
-        if(resources.Count <= 0)
+        if(resources.Any(( x ) => x.Count <= 0)) // Could interrupt in future. By then, consider removing.
         {
             Debug.LogError("Resources not loaded");
             yield break;

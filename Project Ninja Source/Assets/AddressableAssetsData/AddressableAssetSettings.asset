@@ -66,7 +66,7 @@ MonoBehaviour:
         m_Value: https://project-ninja-resources.s3.eu-west-3.amazonaws.com/[BuildTarget]
     - m_InheritedParent: 
       m_Id: 6ba2c995a2690ff429cd82dce8fa3e83
-      m_ProfileName: Cloud
+      m_ProfileName: CLOUD
       m_Values:
       - m_Id: 7c31b40f204298f4c96275e9a095c120
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
@@ -78,6 +78,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: 3f2a7c7a88d68cf49a1e291f13d83c74
         m_Value: https://github.com/Jon50/Project-Ninja/raw/main/Project%20Ninja%20Source/ServerData/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 312ca1107bd56014eacfe7804dde28c1
+      m_ProfileName: CUSTOM
+      m_Values:
+      - m_Id: 7c31b40f204298f4c96275e9a095c120
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 57a5e24b8090c2f4e9a17eca658a0627
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 6c817011b60b074409576841c0a0be7f
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: ad13102b963e8224396b6a4a0eb8dd36
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 3f2a7c7a88d68cf49a1e291f13d83c74
+        m_Value: '{UnityEngine.Application.persistentDataPath}/[BuildTarget]'
     m_ProfileEntryNames:
     - m_Id: 7c31b40f204298f4c96275e9a095c120
       m_Name: BuildTarget
@@ -114,7 +128,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 210382db68366fb4c9ea769c69d4032a, type: 2}
   - {fileID: 11400000, guid: a536031d1b4817149812fc3b2c8e7a93, type: 2}
   - {fileID: 11400000, guid: 0b89bf5a94c5518478812f1a47e7b5f4, type: 2}
-  m_ActiveProfileId: 6ba2c995a2690ff429cd82dce8fa3e83
+  m_ActiveProfileId: 312ca1107bd56014eacfe7804dde28c1
   m_HostingServicesManager:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
