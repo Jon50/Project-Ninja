@@ -17,20 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: ebca5fb0709f75f449bd8516a6c4f252
   m_SerializeEntries:
-  - m_GUID: 93de5d0ae845f3641ae275324f2a2e0f
-    m_Address: Assets/Scenes/Game 2.unity
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - aws_game_scenes
-    m_MainAsset: {fileID: 102900000, guid: 93de5d0ae845f3641ae275324f2a2e0f, type: 3}
-    m_TargetAsset: {fileID: 102900000, guid: 93de5d0ae845f3641ae275324f2a2e0f, type: 3}
-  - m_GUID: 4c20d0d0e5de04a4dad81b186a93e611
-    m_Address: Assets/Scenes/Game 1.unity
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - aws_game_scenes
-    m_MainAsset: {fileID: 102900000, guid: 4c20d0d0e5de04a4dad81b186a93e611, type: 3}
-    m_TargetAsset: {fileID: 102900000, guid: 4c20d0d0e5de04a4dad81b186a93e611, type: 3}
   - m_GUID: 57798f0cdd6bb7c488cdf139b3a37678
     m_Address: Assets/Prefabs/TestContent.prefab
     m_ReadOnly: 0
@@ -43,13 +29,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - aws_content
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 58bbd84c8b7bda04f86c12480a4ee6cd
-    m_Address: Assets/Scenes/MainMenu.unity
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - aws_start_scenes
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
